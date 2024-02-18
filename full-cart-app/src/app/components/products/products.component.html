@@ -1,0 +1,62 @@
+<div class="product-top container-fluid">
+    <br>
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+            </a>
+
+            <h6>All Products</h6>
+        </div>
+
+        <div class="item" >
+            <a>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvjCWAAc7lljwWesSv-dW0_1_yLjulgV3kA&usqp=CAU" alt="">
+            </a>
+
+            <h6>Groceries/Households</h6>
+        </div>
+
+        <div class="item">
+            <a (click)="filter('clothing')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+            </a>
+            
+            <h6>Clothes</h6>
+        </div>
+
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img src="data:image/png;base64,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" alt="">
+            </a>
+            
+            <h6>Jewellery</h6>
+        </div>
+
+        <div class="item">
+            <a (click)="filter('electronics')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+            </a>
+            
+            <h6>Electronic Gadgets</h6>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ${{item.price}}</p>
+                <button class="btn btn-primary" (click)="addToCart(item)">Add to cart</button>
+            </div>
+
+        </ng-container>
+    </div>
+
+</div>

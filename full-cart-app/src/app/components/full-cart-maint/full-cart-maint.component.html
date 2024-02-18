@@ -1,0 +1,50 @@
+<header>
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="navbar-brand align-items-center d-flex">
+            &nbsp;
+            <i style="font-size: 40px;" class="fas fa-shopping-bag">&nbsp;
+                <strong>FULL CART</strong>
+            </i>
+
+            <div class="form-group">
+                <input type="text" class="search-field" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+            </div>
+            <span *ngIf="searchTerm" (click)="clearSearch()" class="clear-icon fas fa-times-circle"></span>
+        </div>
+
+        <button routerLink="cart" class="btn btn-primary">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItems}}</div>
+        </button>
+        <button class="btn btn-primary"> Logout </button>
+
+    </div>
+</header>
+
+<!-- 
+<header>
+    <mat-toolbar color="primary" class="toolbar" fxLayout="row" fxLayoutAlign="space-evenly center" >
+        <div fxLayout="row" fxLayoutAlign="start center">
+            <mat-icon style="size: 120px;">shopping_bag</mat-icon>
+            <span class="full-cart-text">FULL CART</span>
+        </div>
+
+        <div fxFlex fxLayout="row" fxLayoutGap="8px">
+            <mat-form-field fxFlex="auto">
+                <input matInput type="text" placeholder="Search products">
+                <button mat-icon-button class="search-icon">
+                <mat-icon>search</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+
+        <div fxLayout="row" fxLayoutGap="16px">
+            <button mat-icon-button routerLink="cart">
+                <mat-icon class="shopping-cart-icon">shopping_cart</mat-icon>
+                <span class="badge bg-danger cart-icon">{{ totalItems }}</span>
+            </button>
+            <button mat-raised-button color="primary" class="logout-button">Logout</button>
+        </div>
+
+    </mat-toolbar>
+</header> -->
